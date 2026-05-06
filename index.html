@@ -4,28 +4,66 @@
   <meta charset="UTF-8">
   <title>Ян Корионов — Персональный сайт</title>
   <style>
-    .profile-card {
-      text-align: center;
-      padding: 2rem;
-      font-family: Arial, sans-serif;
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
+
+    body {
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+      color: #e6e6e6;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .profile-card {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      padding: 3rem;
+      text-align: center;
+      max-width: 500px;
+      width: 90%;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
     .profile-photo {
-      width: 200px;
-      height: 200px;
+      width: 180px;
+      height: 180px;
       border-radius: 50%;
       object-fit: cover;
-      border: 5px solid #4CAF50;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-      margin-bottom: 1rem;
+      border: 4px solid #4CAF50;
+      box-shadow: 0 8px 25px rgba(76, 175, 80, 0.4);
+      margin-bottom: 1.5rem;
+      transition: transform 0.3s ease;
     }
+
+    .profile-photo:hover {
+      transform: scale(1.05);
+    }
+
     h1 {
-      color: #333;
-      margin-bottom: 0.5rem;
+      color: #ffffff;
+      margin-bottom: 1rem;
+      font-size: 2.2rem;
+      font-weight: 600;
     }
+
     p {
-      color: #666;
-      max-width: 400px;
-      margin: 0 auto;
+      color: #b0b0b0;
+      line-height: 1.6;
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+    }
+
+    .highlight {
+      color: #4CAF50;
+      font-weight: bold;
     }
   </style>
 </head>
@@ -35,7 +73,7 @@
          alt="Фото Яна Корионова"
          class="profile-photo">
     <h1>Добро пожаловать на мой сайт!</h1>
-    <p>Меня зовут Ян Корионов. Здесь вы найдёте информацию о моих проектах и достижениях.</p>
+    <p>Меня зовут <span class="highlight">Ян Корионов</span>. Здесь вы найдёте информацию о моих проектах и достижениях.</p>
   </div>
 </body>
 </html>
